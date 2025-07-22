@@ -1,0 +1,24 @@
+[project]
+name = "optimal_bins_1d"
+version = "0.1.0"
+description = "Compute optimal binning for data with Fisher-Jenks-like splits"
+readme = "README.md"
+authors = [
+    { name = "Rachit Singh", email = "rachitsingh@outlook.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numba>=0.61.2",
+    "numpy>=1.26.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "ruff>=0.12.2",
+    "vulture>=2.14",
+]
